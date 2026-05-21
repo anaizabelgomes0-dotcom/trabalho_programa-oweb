@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicias da Mi — Artesanal com Amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">Delicias da Mi</div>
+    <nav class="nav-links">
+      <a href="#sweets">Doces</a>
+      <a href="#savory">Salgados</a>
+      <a href="#lactose">Sem Lactose</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Carrinho">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Perfil">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sweets">Doces</a>
+    <a href="#savory">Salgados</a>
+    <a href="#lactose">Sem Lactose</a>
+    <a href="#about">Sobre</a>
+    <a href="#contact">Contato</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1400&q=80" alt="Bolo artesanal" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">✦ Feito com Amor</span>
+      <h1 class="hero-title">Sabores artesanais<br />entregues na sua porta.</h1>
+      <p class="hero-subtitle">Sinta o aconchego de uma cozinha caseira combinado com a excelência de uma confeitaria gourmet. Cada receita é um legado de amor e ingredientes premium.</p>
+      <div class="hero-btns">
+        <a href="#sellers" class="btn btn-primary">Ver Cardápio</a>
+        <a href="#about" class="btn btn-outline">Nossa História</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP SELLERS -->
+  <section class="sellers" id="sellers">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mais Vendidos</h2>
+        <p class="section-sub">Favoritos escolhidos à mão da nossa coleção artesanal</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card" id="sweets">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=600&q=80" alt="Macarons" class="card-img" />
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="card-title">Doces</h3>
+              <span class="badge badge-legacy">Clássico</span>
+            </div>
+            <p class="card-desc"></p>
+            <a href="#" class="card-link">Explorar Coleção →</a>
+          </div>
+        </article>
+
+        <article class="card" id="savory">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Croissants" class="card-img" />
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="card-title">Salgados</h3>
+              <span class="badge badge-fresh">Fresquinho</span>
+            </div>
+            <p class="card-desc">.</p>
+            <a href="#" class="card-link">Explorar Coleção →</a>
+          </div>
+        </article>
+
+        <article class="card" id="lactose">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=600&q=80" alt="Torta sem lactose" class="card-img" />
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="card-title">Sem Lactose</h3>
+              <span class="badge badge-inclusive">Inclusivo</span>
+            </div>
+            <p class="card-desc">Sabores indulgentes sem laticínios, feitos com leites vegetais premium.</p>
+            <a href="#" class="card-link">Explorar Coleção →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY SECTION -->
+  <section class="quality" id="about">
+    <div class="container quality-grid">
+      <div class="quality-left">
+        <div class="quality-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" alt="Confeiteira trabalhando" class="quality-img" />
+          <div class="quality-since">
+            <span class="since-year">Desde 2012</span>
+            <span class="since-text">Da nossa cozinha familiar para a sua celebração mais especial.</span>
+          </div>
+        </div>
+      </div>
+      <div class="quality-right">
+        <h2 class="quality-title">Qualidade Artesanal</h2>
+        <p class="quality-text">Na Delicias da Mi, acreditamos que os melhores ingredientes são a paciência e o cuidado. </p>
+        <div class="quality-card">
+          <div class="quality-icon">♥</div>
+          <div>
+            <strong>Feito com Amor</strong>
+            <p>Cada pedido carrega amor </p>
+          </div>
+        </div>
+        <div class="bakers-note">
+          <div class="note-icon">✎</div>
+          <div>
+            <strong>Nota da Confeiteira</strong>
+            <blockquote>"Comecei fazendo docinhos para meus filhos e marido, e o hobbie se tornou profissão."</blockquote>
+            <cite>— Michele (Mi)</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="contact">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title"></h2>
+        <p class="newsletter-sub" </p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="whatssap " placeholder="Seu número" class="newsletter-input" required />
+          <button type="submit" class="btn btn-dark">envie agora</button>
+        </form>
+        <p class="newsletter-success" id="newsletterSuccess">✓ Obrigada! Você está na lista. 🍰</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Delicias da Mi</div>
+        <p>© 2024 Delicias da Mi.<br />Feito com amor.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.76 1.22-5.17 1.22-5.17s-.31-.62-.31-1.54c0-1.45.84-2.53 1.88-2.53.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.85 0 3.09-2.37 3.09-5.18 0-2.14-1.44-3.64-3.5-3.64-2.38 0-3.77 1.79-3.77 3.63 0 .72.28 1.49.62 1.91a.25.25 0 01.06.24l-.23.94c-.04.14-.12.17-.28.1C7.8 13.14 7 11.47 7 9.98c0-2.94 2.14-5.64 6.17-5.64 3.24 0 5.75 2.31 5.75 5.39 0 3.22-2.02 5.81-4.83 5.81a2.5 2.5 0 01-2.14-1.08l-.58 2.17c-.21.81-.77 1.83-1.15 2.45.87.27 1.79.42 2.74.42 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>LOJA</h4>
+        <a href="#">Doces</a>
+        <a href="#">Salgados</a>
+        <a href="#">Sem Lactose</a>
+      </div>
+      <div class="footer-col">
+        <h4>ATENDIMENTO</h4>
+        <a href="#">Informações de Entrega</a>
+        <a href="#">Atacado</a>
+        <a href="#">Fale Conosco</a>
+      </div>
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Serviço</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
