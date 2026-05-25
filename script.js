@@ -103,3 +103,69 @@ document.addEventListener('click', (e) => {
     spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   }
 });
+// ==========================================================================
+// ADICIONAR: CONTROLO ATIVO DO CARROSSEL DE DOCES
+// ==========================================================================
+document.querySelectorAll('a[href="#sweets"], #sweets').forEach(elemento => {
+  elemento.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    const galeria = document.getElementById('docesGaleria');
+    if (galeria) {
+      galeria.classList.add('active');
+      
+      // Desloca o ecrã de forma suave até ao carrossel
+      galeria.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+});
+
+// Lógica de deslocamento (scroll) através dos botões/setas
+const viewport = document.getElementById('carouselViewport');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+if (viewport && prevBtn && nextBtn) {
+  // Define o quanto o carrossel avança a cada clique (largura do card + gap)
+  const scrollAmount = 332; 
+
+  nextBtn.addEventListener('click', () => {
+    viewport.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    viewport.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+}
+
+
+document.querySelectorAll('a[href="#savory"], #savory').forEach(elemento => {
+  elemento.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    const galeriaSalgados = document.getElementById('salgadosGaleria');
+    if (galeriaSalgados) {
+      galeriaSalgados.classList.add('active');
+      
+      // Desloca a tela suavemente até o carrossel de salgados
+      galeriaSalgados.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+});
+
+// Lógica de deslocamento (scroll) do carrossel de salgados
+const salgadosViewport = document.getElementById('salgadosCarouselViewport');
+const salgadosPrevBtn = document.getElementById('salgadosPrevBtn');
+const salgadosNextBtn = document.getElementById('salgadosNextBtn');
+
+if (salgadosViewport && salgadosPrevBtn && salgadosNextBtn) {
+  const scrollAmountSalgados = 332; // largura do card + gap
+
+  salgadosNextBtn.addEventListener('click', () => {
+    salgadosViewport.scrollBy({ left: scrollAmountSalgados, behavior: 'smooth' });
+  });
+
+  salgadosPrevBtn.addEventListener('click', () => {
+    salgadosViewport.scrollBy({ left: -scrollAmountSalgados, behavior: 'smooth' });
+  });
+}
