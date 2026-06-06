@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicias da Mi — Artesanal com Amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+<a href="#home" class="nav-logo">Delicias da Mi</a>
+    <nav class="nav-links">
+      <a href="#docesGaleria">Doces</a>
+      <a href="#salgadosGaleria">Salgados</a>
+      <a href="#especiais">Especiais</a>
+      <a href="#contact">Contato</a>
+    </nav>
+   <div class="nav-icons">
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#docesGaleria">Doces</a>
+    <a href="#salgadosGaleria">Salgados</a>
+    <a href="#lactose">Sem Lactose</a>
+    <a href="#contact">Contato</a>
+  </div>
+
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.pexels.com/photos/33597711/pexels-photo-33597711.jpeg" alt="Bolo artesanal" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">✦ Feito com Amor</span>
+      <h1 class="hero-title">Sabores artesanais<br />entregues na sua porta.</h1>
+      <p class="hero-subtitle">Sinta o aconchego de uma cozinha caseira combinado com a excelência de uma confeitaria gourmet. Cada receita é um legado de amor e ingredientes premium.</p>
+      <div class="hero-btns">
+        <a href="#sellers" class="btn btn-primary">Ver Cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- TOP SELLERS -->
+  <section class="sellers" id="sellers">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mais Vendidos</h2>
+        <p class="section-sub">Favoritos escolhidos à mão da nossa coleção artesanal</p>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card" id="sweets">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1591123220262-87ed377f7c08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZG9jZXMlMjBjYXNlaXJvc3xlbnwwfHwwfHx8MA%3D%3D" alt="doces" class="card-img" />
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="card-title">Doces</h3>
+              <span class="badge badge-legacy">Clássico</span>
+            </div>
+            <p class="card-desc"> Sabores delicados e receitas artesanais preparadas para adoçar cada momento especial. </p>
+            <a href="#" class="card-link">Explorar Coleção →</a>
+          </div>
+        </article>
+
+        <article class="card" id="savory">
+          <div class="card-img-wrap">
+            <img src="https://media.istockphoto.com/id/1300349986/pt/foto/mixed-brazilian-snack-on-the-table.jpg?s=612x612&w=0&k=20&c=fif1ZiSEfop1g7NWjeQO6PsbXnwxZpEXYRAHCvNRSyc=" alt="Salgados diversos" class="card-img" />
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="card-title">Salgados</h3>
+              <span class="badge badge-fresh">Fresquinho</span>
+            </div>
+            <p class="card-desc">Opções fresquinhas e saborosas, perfeitas para cafés, eventos e encontros especiais.</p>
+            <a href="#" class="card-link">Explorar Coleção →</a>
+          </div>
+        </article>
+
+        <article class="card" id="Especiais">
+          <div class="card-img-wrap">
+            <img src="https://media.istockphoto.com/id/1346613110/pt/foto/tropeiro-beans-typical-brazilian-food.jpg?s=612x612&w=0&k=20&c=cUe09FVI2-0knJ1TRrXa8H9Ogvut32v_jYLLx-pmNhc=" alt="Especiais" class="card-img" />
+          </div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3 class="card-title">Especiais</h3>
+              <span class="badge badge-inclusive">Inclusivo</span>
+            </div>
+            <p class="card-desc">Pratos selecionados e receitas especiais preparadas para tornar cada refeição única.</p>
+            <a href="#" class="card-link">Explorar Coleção →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY SECTION -->
+  <section class="doces-galeria" id="docesGaleria">
+    <div class="container">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h2 class="section-title">Doces</h2>
+          <p class="section-sub">Conheça as nossas especialidades artesanais e os seus ingredientes</p>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10229;</button>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">&#10230;</button>
+        </div>
+      </div>
+      
+      <div class="carousel-viewport" id="carouselViewport">
+        <div class="products-grid-carousel">
+          
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/2276516816/pt/foto/sharing-challah-bread-at-hanukkah-family-dinner.jpg?s=612x612&w=0&k=20&c=6yN2HEG7-pt6p80fVpZZRDoT6Z444Xszf3GDz36BLd8=" alt="Trança simples" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Trança simples</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal macia e levemente adocicada..</p>
+              <span class="product-price">R$ 22,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://padariasantabranca.com.br/wp-content/uploads/2016/09/IMG_2026-1024x683.jpg" alt="trança de doce de leite" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Trança de doce de leite </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Recheio cremoso de doce de leite artesanal. </p>
+              <span class="product-price">R$ 40,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://th.bing.com/th/id/OIP.4jva6DN6Nq4kJg3gI1aHwQHaE8?w=245&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt=" Trança de goiabada" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Trança de Goiabada </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Tradicional recheio de goiabada com sabor caseiro.</p>
+              <span class="product-price">R$ 32,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://th.bing.com/th/id/OSK.3a6ac05b4817f6fafbc13ea2e6d0f6ac?w=424&h=424&c=7&rs=1&qlt=90&o=6&dpr=1.1&pid=16.1" alt="Trança de Fruta Cristalizada" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Trança de Frutas Cristalizadas </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa macia com frutas cristalizadas selecionadas.</p>
+              <span class="product-price">R$ 37,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://th.bing.com/th/id/OIP.hQ4cXJXSBWi8LjEq2RJCXQHaE8?w=281&h=187&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt=" Trança de Avelã" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolo de Cenoura Gourmet</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Recheio cremoso de avelã com toque especial.</p>
+              <span class="product-price">R$ 52,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1154111490/pt/foto/coconut-cookies-on-a-brown-wooden-background-coconuts.webp?a=1&b=1&s=612x612&w=0&k=20&c=4kjwFVQJLFaUYsVanpwoHW4OL9VgkzL1oz3tv53-59o=" alt="Bolacha de coco" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha de coco </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Bolacha crocante com coco ralado.</p>
+              <span class="product-price">R$ 40,00 / kg </span>
+            </div>
+          </div>
+
+
+            <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1431335484/pt/foto/healthy-oatmeal-cookies-with-dates-nuts-and-flaxseed-on-a-wooden-board-on-a-gray-textured.jpg?s=612x612&w=0&k=20&c=gosLW17oaL2ytszK0d5mvw744Ex5EViXMdTy2vzcKXI=" alt="Bolacha de Aveia" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha de Aveia </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Feita com aveia, leve e saborosa.</p>
+              <span class="product-price">R$ 46,00 / kg </span>
+            </div>
+          </div>
+
+
+            <div class="product-item-carousel">
+            <img src="https://estag.fimagenes.com/imagenesred/fb_2171623_678.jpg" alt="Bolacha de Aveia" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha de Aveia </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Feita com aveia, leve e saborosa.</p>
+              <span class="product-price">R$ 46,00 / kg </span>
+            </div>
+          </div>
+
+
+            <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1256105731/pt/foto/traditional-brazilian-guava-paste-cookies-called-goiabinha-in-a-white-bowl.jpg?s=612x612&w=0&k=20&c=IJ3VC0t6m_uTvlyJgb1ndTA5yeiRyC0wAAmEDGcl-J4=" alt="Bolacha casadinho" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha Casadinho </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Bolacha recheada com doce artesanal.</p>
+              <span class="product-price">R$ 50,00 / kg </span>
+            </div>
+          </div>
+
+
+
+          
+            <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1255021568/pt/foto/traditional-brazilian-buttered-cookies-stuffed-with-guava-paste-called-goiabinha-ou-belisc%C3%A3o.jpg?s=612x612&w=0&k=20&c=liP0h7yk9SVX-9hCuhWHUO2tapfULkcLvRm6pPw_h7Q=" alt="Bolacha Beliscão" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha Beliscão </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa delicada com recheio de goiabada.</p>
+              <span class="product-price">R$ 44,00 / kg </span>
+            </div>
+          </div>
+
+
+               <div class="product-item-carousel">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29va2llJTIwY2FzZWlyb3xlbnwwfHwwfHx8MA%3D%3D" alt="Cookie" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Cookie  </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Gotas de chocolate em massa amanteigada.</p>
+              <span class="product-price">R$ 50,00 / kg </span>
+            </div>
+          </div>
+ 
+
+          
+               <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1318334948/pt/foto/typical-sweets-for-the-brazilian-june-party.jpg?s=612x612&w=0&k=20&c=E92EP7IsluKZtvdBkKF90PtxxgS3TuSeKrZE0vaoUgQ=" alt="Bolo de Milho" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Bolo de Milho </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Bolo macio com sabor tradicional de milho.</p>
+              <span class="product-price">R$ 28,00 / un </span>
+            </div>
+          </div>
+
+          
+               <div class="product-item-carousel">
+            <img src="https://th.bing.com/th/id/OIP.Z54tnY3-32w0-JhWwuYXKwHaE8?w=270&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="Bolo de Aveia" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Bolo de Aveia  </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Gotas de chocolate em massa amanteigada.</p>
+              <span class="product-price">R$ 35,00 / un </span>
+            </div>
+          </div>
+
+
+               <div class="product-item-carousel">
+            <img src="https://th.bing.com/th/id/OIP.RgDaq-KuPfR2AreQg-t2SQHaEK?w=317&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="Cookie" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name"> Bolo de Ninho </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa fofinha com sabor suave de leite Ninho.</p>
+              <span class="product-price">R$ 25,00 /  </span>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Seçao de salgados-->
+<section class="salgados-galeria" id="salgadosGaleria">
+    <div class="container">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h2 class="section-title">Salgados</h2>
+          <p class="section-sub">Conheça nossos salgados artesanais assados na hora</p>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="salgadosPrevBtn" aria-label="Anterior">&#10229;</button>
+          <button class="carousel-btn next" id="salgadosNextBtn" aria-label="Próximo">&#10230;</button>
+        </div>
+      </div>
+      
+      <div class="carousel-viewport" id="salgadosCarouselViewport">
+        <div class="products-grid-carousel">
+          
+          <div class="product-item-carousel">
+            <img src="https://receitadaboa.com.br/wp-content/uploads/2024/09/Pao-caseiro.jpg" alt="Croissant" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Pão caseiro - Tradicional</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong>Pão artesanal macio com receita tradicional.</p>
+              <span class="product-price">R$ 16,00 / un</span>
+            </div>
+          </div>
+
+
+          <div class="product-item-carousel">
+            <img src="https://plus.unsplash.com/premium_photo-1675727572780-522e305f1374?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cCVDMyVBM28lMjBpbnRlZ3JhbCUyMGNhc2Vpcm98ZW58MHx8MHx8fDA%3D" alt="pão integral" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Pão caseiro - Integral </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Preparado com farinha integral e sabor caseiro.</p>
+             <span class="product-price">R$ 20,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://www.divinho.com.br/blog/wp-content/uploads/2022/05/Pizza-Caseira.jpg" alt="Quiche" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Massa de Pizza</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa leve e pronta para rechear.</p>
+              <span class="product-price">R$ 6,00 / un</span>
+            </div>
+          </div>
+
+
+            <div class="product-item-carousel">
+            <img src="https://revistaoeste.com/oestegeral/wp-content/uploads/2026/01/pizza-dough_1769467027544-1024x576.jpg" alt="Quiche" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Massa de Pizza - Integral </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Versão integral com textura macia.</p>
+              <span class="product-price">R$ 8,00 / un</span>
+            </div>
+          </div>
+          
+          <div class="product-item-carousel">
+            <img src="https://static.itdg.com.br/images/1200-630/ee186c287ebf4016dc98f28f151f301c/pao-de-queijo-mineiro.jpg" alt="Empada" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Pão de Queijo</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong>Feito com queijo e polvilho, crocante por fora e macio por dentro.</p>
+              <span class="product-price">R$ 26,00 / kg </span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="WhatsApp Image 2026-05-26 at 15.25.05.jpeg" alt="trança de calabresa" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Trança de Calabresa </h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa que derrete na boca, recheio de peito de frango desfiado com requeijão cremoso e temperos verdes frescos.</p>
+              <span class="product-price">R$ 42,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.uQjqoJEPnBfDWBkyFjeTqwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Trança de Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Trança de Frango</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Frango desfiado com tempero especial.</p>
+              <span class="product-price">R$ 42,00 / un</span>
+            </div>
+          </div>
+      <div class="product-item-carousel">
+            <img src="https://mamalivingabroad.com/wp-content/uploads/2023/10/traditional-challah_Web-334x400.jpg" alt="Trança de Pizza" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Trança de Pizza</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Presunto, queijo e molho de tomate.</p>
+              <span class="product-price">R$ 42,00 / un</span>
+            </div>
+            </div>
+      <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1502953714/pt/foto/arabian-esfiha-of-chicken-esfirra-brazilian-snack.jpg?s=612x612&w=0&k=20&c=0atT5RmJF6HzrnSxLQPn9tnqk_GjNu9E884Hgf2oQ7c=" alt="Esfirra de frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirras de Frango</h3>
+              <p class="product-desc">Recheio de frango bem temperado.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>  <!-- ← fecha Esfirras de Frango -->
+
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1299451799/pt/foto/meat-sfiha-typical-arabic-dish-that-has-been-adapted-for-brazilian-cuisine.jpg?s=612x612&w=0&k=20&c=Dvr9S5xriOZ8uz3rbez65U72KJVq3ldXVap1hdzCWtM=" alt="Empada" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirras de Carne</h3>
+              <p class="product-desc">Carne moída suculenta e temperada.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>  <!-- ← fecha Esfirras de Carne -->
+
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1061715604/pt/foto/brazilian-snack-meat-esfiha.jpg?s=612x612&w=0&k=20&c=lkYXwTomS5eGjvfTCH2w2qkBAXeeD7j5rbx5bq7NcLk=" alt="Empada" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirras de Calabresa</h3>
+              <p class="product-desc">Calabresa picada com temperos especiais.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>  <!-- ← fecha Esfirras de Calabresa -->
+
+          <div class="product-item-carousel">
+            <img src="https://images.pexels.com/photos/7960429/pexels-photo-7960429.jpeg" alt="Esfirra de pizza" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirras de Pizza</h3>
+              <p class="product-desc">Queijo, presunto e molho de tomate.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>  <!-- ← fecha Esfirras de Pizza -->
+
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/488601202/pt/foto/su%C3%ADnos-em-cobertor.jpg?s=612x612&w=0&k=20&c=wgM4h_KqpqVTPt2hfgbHu0IcO_I8ZawoQ2c4hgsixac=" alt="Enroladinho de salsicha" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Enroladinho de salsicha</h3>
+              <p class="product-desc">Massa macia envolvendo salsicha selecionada.</p>
+              <span class="product-price">R$ 2,00 / un</span>
+            </div>
+          </div> 
+
+          <div class="product-item-carousel">
+            <img src="https://thf.bing.com/th/id/OIP.WJNQzf3l-45B0kQqXu5SLAHaEc?w=281&h=180&c=7&r=0&o=7&cb=thfc1falcon2&dpr=1.1&pid=1.7&rm=3" alt="Torta de Pizza" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Torta de pizza</h3>
+              <p class="product-desc">Presunto, queijo e molho de tomate.</p>
+              <span class="product-price">R$ 55,00 / un</span>
+            </div>
+          </div>  
+
+          <div class="product-item-carousel">
+            <img src="https://thf.bing.com/th/id/OIP.ps0Y88ffCpDMUvMzog8mbwHaEK?w=291&h=180&c=7&r=0&o=7&cb=thfc1falcon2&dpr=1.1&pid=1.7&rm=3" alt="Torta de Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Torta de Frango com requeijão</h3>
+              <p class="product-desc">Massa leve com recheio cremoso.</p>
+              <span class="product-price">R$ 55,00 / un</span>
+            </div>
+          </div>  
+
+           <div class="product-item-carousel">
+            <img src="https://thf.bing.com/th/id/OIP.PpJRCLC4bSTXIm0GMT7P2gHaE8?w=249&h=180&c=7&r=0&o=7&cb=thfc1falcon2&dpr=1.1&pid=1.7&rm=3" alt="Empadão de frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Empadão de Frango </h3>
+              <p class="product-desc">Massa amanteigada com recheio de frango.</p>
+              <span class="product-price">R$ 50,00 / kg</span>
+            </div>
+          </div>  
+
+            <div class="product-item-carousel">
+            <img src="https://thf.bing.com/th/id/OIP.9pdvt14EhUXUKFju8nySSgHaE8?w=242&h=180&c=7&r=0&o=7&cb=thfc1falcon2&dpr=1.1&pid=1.7&rm=3" alt="Empadão de palmito" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Empadão de Frango com Palmito</h3>
+              <p class="product-desc">Frango cremoso combinado com palmito.</p>
+              <span class="product-price">R$ 50,00 / kg</span>
+            </div>
+          </div>  
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- SEÇÃO ESPECIAIS -->
+<section class="especiais-galeria" id="especiais">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Especiais</h2>
+      <p class="section-sub">Da nossa cozinha com muito carinho</p>
+    </div>
+
+    <!-- PÃES & MASSAS -->
+    <div class="especiais-sub">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h3 class="section-title-sub">🍞 Pães & Massas</h3>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="paesPrev">&#10229;</button>
+          <button class="carousel-btn next" id="paesNext">&#10230;</button>
+        </div>
+      </div>
+      <div class="carousel-viewport" id="paesViewport">
+        <div class="products-grid-carousel">
+
+          <div class="product-item-carousel">
+            <img src="https://receitadaboa.com.br/wp-content/uploads/2024/09/Pao-caseiro.jpg" alt="Pão Tradicional" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Pão Caseiro Tradicional</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Receita caseira tradicional, assado na hora com ingredientes selecionados.</p>
+              <span class="product-price">R$ 16,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80" alt="Pão Integral" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Pão Caseiro Integral</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Farinha integral, ingredientes naturais e muito sabor.</p>
+              <span class="product-price">R$ 20,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://www.divinho.com.br/blog/wp-content/uploads/2022/05/Pizza-Caseira.jpg" alt="Massa de Pizza Branca" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Massa de Pizza Branca</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal leve e crocante, feita na hora.</p>
+              <span class="product-price">R$ 6,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80" alt="Massa de Pizza Integral" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Massa de Pizza Integral</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa integral artesanal, mais nutritiva e saborosa.</p>
+              <span class="product-price">R$ 8,00 / un</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SALGADINHOS -->
+    <div class="especiais-sub">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h3 class="section-title-sub">🥐 Salgadinhos</h3>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="salgadinhosPrev">&#10229;</button>
+          <button class="carousel-btn next" id="salgadinhosNext">&#10230;</button>
+        </div>
+      </div>
+      <div class="carousel-viewport" id="salgadinhosViewport">
+        <div class="products-grid-carousel">
+
+          <div class="product-item-carousel">
+            <img src="istockphoto-1502953714-612x612.jpg" alt="Esfirra de Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirra de Frango</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal, recheio de frango desfiado com requeijão e temperos frescos.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="data:image/webp;base64,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" alt="Esfirra de Carne" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirra de Carne</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal com recheio de carne moída temperada na hora.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/11/esfirra-de-calabresa.jpg" alt="Esfirra de Calabresa" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirra de Calabresa</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal com recheio de calabresa artesanal defumada.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://receitinhas.com.br/wp-content/uploads/2022/04/Mini-esfiha-1.jpg" alt="Esfirra de Pizza" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Esfirra de Pizza</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal com molho, queijo e ingredientes especiais.</p>
+              <span class="product-price">R$ 3,00 / un</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80" alt="Enroladinho de Salsicha" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Enroladinho de Salsicha</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa macia artesanal enrolada com salsicha temperada.</p>
+              <span class="product-price">R$ 2,00 / un</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PRATOS -->
+    <div class="especiais-sub">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h3 class="section-title-sub">🍲 Pratos</h3>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="pratosPrev">&#10229;</button>
+          <button class="carousel-btn next" id="pratosNext">&#10230;</button>
+        </div>
+      </div>
+      <div class="carousel-viewport" id="pratosViewport">
+        <div class="products-grid-carousel">
+
+          <div class="product-item-carousel">
+            <img src="feijoada-1140x570.jpg" alt="Feijoada" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Feijoada</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Feijão preto, carnes selecionadas, temperos tradicionais.</p>
+              <span class="product-price">R$ 50,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://receitou.com.br/wp-content/uploads/2022/10/empadao-de-frango.jpg" alt="Empadão de Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Empadão de Frango</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal crocante, recheio de frango temperado.</p>
+              <span class="product-price">R$ 50,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://www.receitinhascaseiras.com.br/wp-content/uploads/2024/10/receita-de-empadao-de-frango-com-palmito-simples-pratico.webp" alt="Empadão de Frango com Palmito" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Empadão Frango c/ Palmito</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa artesanal, frango desfiado e palmito fresco.</p>
+              <span class="product-price">R$ 60,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://incrivelreceitas.com/wp-content/uploads/2023/03/escondidinho-de-frango-cremoso-1000x600.jpg" alt="Escondidinho de Mandioca com Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Escondidinho Mandioca c/ Frango</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Purê de mandioca, frango desfiado temperado.</p>
+              <span class="product-price">R$ 56,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://anamariareceitas.com.br/wp-content/uploads/2023/06/Escondidinho-de-carne-moida.jpg" alt="Escondidinho Mandioca Carne Moída" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Escondidinho Mandioca c/ Carne Moída</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Purê de mandioca cremoso, carne moída ao molho.</p>
+              <span class="product-price">R$ 60,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://meinformei.com.br/wp-content/uploads/2022/05/272543_original.jpg" alt="Escondidinho Mandioca Carne Seca" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Escondidinho Mandioca c/ Carne Seca</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Purê de mandioca com carne seca desfiada e temperada.</p>
+              <span class="product-price">R$ 66,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://www.grupopq.com.br/wp-content/uploads/2022/07/SITE-3-768x768.jpg" alt="Escondidinho Cabotiá Carne Moída" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Escondidinho Cabotiá c/ Carne Moída</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Purê de abóbora cabotiá com carne moída temperada.</p>
+              <span class="product-price">R$ 60,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2019/08/lasanha_frango-420x265.jpg" alt="Escondidinho Cabotiá Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Escondidinho Cabotiá c/ Frango</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Purê de abóbora cabotiá com frango desfiado.</p>
+              <span class="product-price">R$ 55,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://guiadacozinha.com.br/wp-content/uploads/2020/11/Torta-de-frango-de-liquidificador.jpg" alt="Torta de Liquidificador Frango" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Torta Liquidificador — Frango c/ Requeijão</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa de liquidificador fofinha, recheio de frango com requeijão cremoso.</p>
+              <span class="product-price">R$ 55,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://receitou.com.br/wp-content/uploads/2022/10/Receita-de-Torta-de-Liquidificador-1024x576.jpg" alt="Torta de Liquidificador Pizza" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Torta Liquidificador — Pizza</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Massa de liquidificador, recheio especial de pizza com queijo.</p>
+              <span class="product-price">R$ 55,00 / kg</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BOLACHAS -->
+    <div class="especiais-sub">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h3 class="section-title-sub">🍪 Bolachas</h3>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="bolachasPrev">&#10229;</button>
+          <button class="carousel-btn next" id="bolachasNext">&#10230;</button>
+        </div>
+      </div>
+      <div class="carousel-viewport" id="bolachasViewport">
+        <div class="products-grid-carousel">
+
+          <div class="product-item-carousel">
+            <img src="https://receitatodahora.com.br/wp-content/uploads/2023/06/bolachinha-de-coco-30-05.jpg" alt="Bolacha de Coco" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha de Coco</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Coco ralado fresco, manteiga e ingredientes naturais.</p>
+              <span class="product-price">R$ 40,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://receitarapido.com/wp-content/uploads/2023/01/Bolacha-Caseira-Macia-e-Super-Deliciosa-942x628.jpg" alt="Bolacha de Aveia" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolacha de Aveia</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Aveia integral, mel e ingredientes naturais selecionados.</p>
+              <span class="product-price">R$ 46,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1256105731/pt/foto/traditional-brazilian-guava-paste-cookies-called-goiabinha-in-a-white-bowl.webp?a=1&b=1&s=612x612&w=0&k=20&c=K7oeZoLXLEVHLaI3J4_4SFWCWFsuFGxs7YUcJOBIFzE=" alt="Casadinho" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Casadinho</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Biscoito clássico recheado, feito com ingredientes artesanais.</p>
+              <span class="product-price">R$ 50,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://media.istockphoto.com/id/1255021568/pt/foto/traditional-brazilian-buttered-cookies-stuffed-with-guava-paste-called-goiabinha-ou-belisc%C3%A3o.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ran58xkAmiou2GrZMhLSkdinuWO4MtkQmD-dBW8_Lk4=" alt="Beliscão" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Beliscão</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Biscoito crocante e levinho, perfeito para o lanche.</p>
+              <span class="product-price">R$ 44,00 / kg</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pumpkin-chocolate-chip-cookies-horizontal-1538066903.jpg?crop=1.00xw:0.752xh;0,0.139xh&resize=1200:*" alt="Cookie" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Cookie</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Cookie artesanal crocante por fora, macio por dentro.</p>
+              <span class="product-price">R$ 50,00 / kg</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BOLOS -->
+    <div class="especiais-sub">
+      <div class="section-header-carousel">
+        <div class="section-header-text">
+          <h3 class="section-title-sub">🎂 Bolos</h3>
+        </div>
+        <div class="carousel-actions">
+          <button class="carousel-btn prev" id="bolosPrev">&#10229;</button>
+          <button class="carousel-btn next" id="bolosNext">&#10230;</button>
+        </div>
+      </div>
+      <div class="carousel-viewport" id="bolosViewport">
+        <div class="products-grid-carousel">
+
+          <div class="product-item-carousel">
+            <img src="https://trembaodeliciasdeminas.com.br/wp-content/uploads/2021/02/Bolo-de-milho-com-requeijao-1.jpg" alt="Bolo de Milho" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolo de Milho</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Milho verde fresco, ovos caipiras e um toque de manteiga.</p>
+              <span class="product-price">R$ 28,00</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://linkezine.com.br/wp-content/uploads/2025/03/bolo-de-aveia-2025.jpg" alt="Bolo de Aveia" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolo de Aveia</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Aveia integral, mel, ovos e ingredientes naturais.</p>
+              <span class="product-price">R$ 35,00</span>
+            </div>
+          </div>
+
+          <div class="product-item-carousel">
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.LXeY7LSok4zVaeYGBDRWTAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bolo Ninho" class="product-img">
+            <div class="product-details">
+              <h3 class="product-name">Bolo Ninho</h3>
+              <p class="product-desc"><strong>Ingredientes:</strong> Leite Ninho, manteiga, ovos e cobertura especial cremosa.</p>
+              <span class="product-price">R$ 25,00</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="contact">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Vamos fazer o seu pedido?</h2>
+        <p class="newsletter-sub">Faça seu pedido direto pelo WhatsApp! 🍰</p>
+        <a href="https://wa.me/44999687969?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" 
+   target="_blank" 
+   class="btn btn-dark">
+  Chamar no WhatsApp
+</a>
+        <p class="newsletter-success" id="newsletterSuccess">✓ Obrigada! Você está na lista. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Delicias da Mi</div>
+        <p>© 2024 Delicias da Mi.<br />Feito com amor.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.76 1.22-5.17 1.22-5.17s-.31-.62-.31-1.54c0-1.45.84-2.53 1.88-2.53.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.85 0 3.09-2.37 3.09-5.18 0-2.14-1.44-3.64-3.5-3.64-2.38 0-3.77 1.79-3.77 3.63 0 .72.28 1.49.62 1.91a.25.25 0 01.06.24l-.23.94c-.04.14-.12.17-.28.1C7.8 13.14 7 11.47 7 9.98c0-2.94 2.14-5.64 6.17-5.64 3.24 0 5.75 2.31 5.75 5.39 0 3.22-2.02 5.81-4.83 5.81a2.5 2.5 0 01-2.14-1.08l-.58 2.17c-.21.81-.77 1.83-1.15 2.45.87.27 1.79.42 2.74.42 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>LOJA</h4>
+        <a href="#">Doces</a>
+        <a href="#">Salgados</a>
+        <a href="#">Sem Lactose</a>
+      </div>
+      <div class="footer-col">
+        <h4>ATENDIMENTO</h4>
+        <a href="#">Informações de Entrega</a>
+        <a href="#">Atacado</a>
+        <a href="#">Fale Conosco</a>
+      </div>
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Serviço</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
